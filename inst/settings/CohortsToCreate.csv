@@ -1,0 +1,14 @@
+atlas_id,cohort_id,cohort_name,logic_description,generate_stats
+1062,1062,[SI]  CC - Target- 3 events spanning 120 days - index at first event,NA,FALSE
+1076,1076,[SI]  CC - Target Sensitivity- 2 events spanning 56 days - index at first event,NA,FALSE
+1064,1064,[SI] CC- Treatment - Inhaled Cortecosteroids,NA,FALSE
+1065,1065,[SI] CC- Treatment - Macrolide antibiotics,NA,FALSE
+1066,1066,[SI] CC- Treatment - Bronchodilators,NA,FALSE
+1067,1067,[SI] CC- Treatment - Drugs for acid related dissorders,NA,FALSE
+1068,1068,[SI] CC- Treatment - Gastrointestinal motility agents,NA,FALSE
+1069,1069,[SI] CC- Treatment - Leukotriene Receptor Antagonists,NA,FALSE
+1070,1070,[SI] CC- Treatment - Systemic antihistamines,NA,FALSE
+1071,1071,[SI] CC- Treatment - Neuromodulators - Gabapentin,NA,FALSE
+1072,1072,[SI] CC-Treatment-Triglycic antidepressants,NA,FALSE
+1073,1073,[SI] CC-Treatment-Pregabalin,NA,FALSE
+1074,1074,[SI] CC-Treatment-Opioids,NA,FALSE
