@@ -7,6 +7,8 @@ createAnalysisDetails <- function(cdmDatabaseSchema,
                                   databaseId, 
                                   minCellCount, 
                                   baseUrl, 
+                                  saveSettings, 
+                                  databaseName, 
                                   diagnosticsExportFolder,
                                   treatmentPatternsExportFolder){
   
@@ -18,6 +20,8 @@ createAnalysisDetails <- function(cdmDatabaseSchema,
                    databaseId = databaseId, 
                    minCellCount = minCellCount, 
                    baseUrl = baseUrl, 
+                   saveSettings = saveSettings, 
+                   databaseName = databaseName,
                    diagnosticsExportFolder = diagnosticsExportFolder, 
                    treatmentPatternsExportFolder = treatmentPatternsExportFolder
                    )
