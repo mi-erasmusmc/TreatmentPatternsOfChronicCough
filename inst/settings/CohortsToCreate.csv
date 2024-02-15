@@ -1,14 +1,16 @@
 atlas_id,cohort_id,cohort_name,logic_description,generate_stats
-1062,1062,[SI]  CC - Target- 3 events spanning 120 days - index at first event,NA,FALSE
-1076,1076,[SI]  CC - Target Sensitivity- 2 events spanning 56 days - index at first event,NA,FALSE
-1064,1064,[SI] CC- Treatment - Inhaled Cortecosteroids,NA,FALSE
-1065,1065,[SI] CC- Treatment - Macrolide antibiotics,NA,FALSE
-1066,1066,[SI] CC- Treatment - Bronchodilators,NA,FALSE
-1067,1067,[SI] CC- Treatment - Drugs for acid related dissorders,NA,FALSE
-1068,1068,[SI] CC- Treatment - Gastrointestinal motility agents,NA,FALSE
-1069,1069,[SI] CC- Treatment - Leukotriene Receptor Antagonists,NA,FALSE
-1070,1070,[SI] CC- Treatment - Systemic antihistamines,NA,FALSE
-1071,1071,[SI] CC- Treatment - Neuromodulators - Gabapentin,NA,FALSE
-1072,1072,[SI] CC-Treatment-Triglycic antidepressants,NA,FALSE
-1073,1073,[SI] CC-Treatment-Pregabalin,NA,FALSE
-1074,1074,[SI] CC-Treatment-Opioids,NA,FALSE
+1135,1135,[SI]  CC - Target- 3 events spanning 120 days - index at last event - 365 days post index obs,NA,FALSE
+1136,1136,[SI]  CC - Target Sensitivity- 2 events spanning 56 days - index at last event - 365 post index obs,NA,FALSE
+1439,1439,[SI] CC-Target-3 events spanning 120 days-index at last event-365 days post index obs-noAsthma-COPD,NA,FALSE
+1440,1440,[SI] CC- Target- 3 events spanning 120 days-index at last event-365 dayspostindexobs_firstTimeUsers,NA,FALSE
+1124,1124,[SI] v2 CC-Treatment - Inhaled Cortecosteroids,NA,FALSE
+1125,1125,[SI] v2 CC- Treatment - Drugs for acid related dissorders,NA,FALSE
+1126,1126,[SI] v2 CC- Treatment - Gastrointestinal motility agents,NA,FALSE
+1127,1127,[SI] v2 CC- Treatment - Bronchodilators,NA,FALSE
+1128,1128,[SI] v2 CC- Treatment - Leukotriene Receptor Antagonists,NA,FALSE
+1129,1129,[SI] v2 CC- Treatment - Systemic antihistamines,NA,FALSE
+1130,1130,[SI] v2 CC- Treatment - Neuromodulators - Gabapentin,NA,FALSE
+1131,1131,[SI] v2 CC-Treatment-Triglycic antidepressants,NA,FALSE
+1132,1132,[SI] v2 CC-Treatment-Pregabalin,NA,FALSE
+1133,1133,[SI] v2 CC-Treatment-Opioids-Refined,NA,FALSE
+1134,1134,[SI] v2 CC- Treatment - Macrolide antibiotics,NA,FALSE
