@@ -1,0 +1,16 @@
+atlas_id,cohort_id,cohort_name,logic_description,generate_stats
+1135,1135,[SI]  CC - Target- 3 events spanning 120 days - index at last event - 365 days post index obs,NA,FALSE
+1136,1136,[SI]  CC - Target Sensitivity- 2 events spanning 56 days - index at last event - 365 post index obs,NA,FALSE
+1439,1439,[SI] CC-Target-3 events spanning 120 days-index at last event-365 days post index obs-noAsthma-COPD,NA,FALSE
+1440,1440,[SI] CC- Target- 3 events spanning 120 days-index at last event-365 dayspostindexobs_firstTimeUsers,NA,FALSE
+1124,1124,[SI] v2 CC-Treatment - Inhaled Cortecosteroids,NA,FALSE
+1125,1125,[SI] v2 CC- Treatment - Drugs for acid related dissorders,NA,FALSE
+1126,1126,[SI] v2 CC- Treatment - Gastrointestinal motility agents,NA,FALSE
+1127,1127,[SI] v2 CC- Treatment - Bronchodilators,NA,FALSE
+1128,1128,[SI] v2 CC- Treatment - Leukotriene Receptor Antagonists,NA,FALSE
+1129,1129,[SI] v2 CC- Treatment - Systemic antihistamines,NA,FALSE
+1130,1130,[SI] v2 CC- Treatment - Neuromodulators - Gabapentin,NA,FALSE
+1131,1131,[SI] v2 CC-Treatment-Triglycic antidepressants,NA,FALSE
+1132,1132,[SI] v2 CC-Treatment-Pregabalin,NA,FALSE
+1133,1133,[SI] v2 CC-Treatment-Opioids-Refined,NA,FALSE
+1134,1134,[SI] v2 CC- Treatment - Macrolide antibiotics,NA,FALSE
