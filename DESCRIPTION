@@ -1,16 +1,22 @@
 Package: TreatmentPatternsOfChronicCough
 Title: What the Package Does (One Line, Title Case)
 Version: 0.1.0
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+            person(given = "Solomon", family  = "Ioannou", email = "s.ioannou@erasmusmc.nl", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID")), 
+           person(given = "Johnmary", family = "Arinze", middle = "T", email = "j.arinze@erasmusmc.nl", role = "aut"))
+Description: This is a study package to perform an analysis to identify the treatment patterns received by patients with chronic cough.
 License: Apache License (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
+    CDMConnector,
     CohortDiagnostics,
     CohortGenerator,
+    dplyr,
     FeatureExtraction,
-    TreatmentPatterns
+    magrittr,
+    stringr,
+    TreatmentPatterns,
+    utils
