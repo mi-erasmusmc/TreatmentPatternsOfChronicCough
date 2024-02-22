@@ -116,7 +116,7 @@ countLessThanFive <- function(treatmentPathways){
     dplyr::ungroup() %>%
     dplyr::group_by(eventId) %>%
     dplyr::summarise(freq = sum(freq), .groups = "drop") %>%
-    dplyr::mutate(path = "Freq less than 5") %>%
+    dplyr::mutate(path = "Frequency less than five") %>%
     tidyr::pivot_wider(id_cols = path, names_from = eventId, values_from = freq, names_prefix = "eventSeq_") %>%
     dplyr::rowwise() %>%
     dplyr::mutate(Overall = base::sum(dplyr::c_across(dplyr::where(base::is.numeric)), na.rm = TRUE))
@@ -148,15 +148,15 @@ countTPCC <- function(treatmentPathways){
   result[is.na(result)] <- 0
   
   treated <- result %>%
-    dplyr::filter(path %in% c("Monotherapy", "Combinations", "Freq less than 5")) %>%
+    dplyr::filter(path %in% c("Monotherapy", "Combinations", "Frequency less than five")) %>%
     dplyr::summarise(dplyr::across(dplyr::where(base::is.numeric), ~base::sum(., na.rm = T))) %>%
-    dplyr::mutate(path = "Overall Treated") %>%
+    dplyr::mutate(path = "Total treated") %>%
     dplyr::select(path, dplyr::everything())
   
   treatedValid <- result %>%
     dplyr::filter(path %in% c("Monotherapy", "Combinations")) %>%
     dplyr::summarise(dplyr::across(dplyr::where(base::is.numeric), ~base::sum(., na.rm = T))) %>%
-    dplyr::mutate(path = "Validated Treatments") %>%
+    dplyr::mutate(path = "Valid treatments") %>%
     dplyr::select(path, dplyr::everything())
   
   result <- result %>%
