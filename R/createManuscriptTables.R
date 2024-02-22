@@ -34,17 +34,17 @@ formatTables <- function(tableList, dropXlsxFiles = FALSE){
   names(manuscriptList) <- names(analysisDetails$cohortSettings)
   for (i in seq_along(tableList)) {
     #Table 1
-    overallTreated <- tableList[[i]] %>% filter(path == "Overall Treated") %>% dplyr::select("Overall") %>% dplyr::pull()
+    overallTreated <- tableList[[i]] %>% filter(path == "Total treated") %>% dplyr::select("Overall") %>% dplyr::pull()
     
     table1 <- tableList[[i]] %>%
-      dplyr::filter(path %in% c("Monotherapy", "Combinations", "Freq less than 5", "Validated Treatments", "Overall Treated")) %>%
+      dplyr::filter(path %in% c("Monotherapy", "Combinations", "Frequency less than five", "Valid treatments", "Total treated")) %>%
       dplyr::mutate(dplyr::across(dplyr::where(is.numeric), ~round((.x/overallTreated)*100, 2), .names = "{col}_%")) %>%
       dplyr::relocate(sort(names(.)), .after = path) %>%
       dplyr::select(path, dplyr::starts_with("Tx"), dplyr::starts_with("Overall"))
     
     # Table 2
     table2 <- tableList[[i]] %>%
-      dplyr::filter(!(path %in% c("Monotherapy", "Combinations", "Freq less than 5", "Validated Treatments", "Overall Treated"))) %>%
+      dplyr::filter(!(path %in% c("Monotherapy", "Combinations", "Frequency less than five", "Valid treatments", "Total treated"))) %>%
       dplyr::mutate(dplyr::across(dplyr::where(is.numeric), ~round((.x/sum(.x))*100, 2), .names = "{col}_%")) %>%
       dplyr::relocate(sort(names(.)), .after = path) %>%
       dplyr::select(path, dplyr::starts_with("Tx"), dplyr::starts_with("Overall"))
